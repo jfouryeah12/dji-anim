@@ -9,8 +9,8 @@ window.addEventListener('DOMContentLoaded', () => {
     masterTimeline.to("#logo-wrapper", { 
         duration: 0.8, 
         scale: 0.35, 
-        x: -85,  
-        y: -85, 
+        x: -75,  
+        y: -75, 
         delay: 0.5 
     });
 
@@ -19,6 +19,18 @@ window.addEventListener('DOMContentLoaded', () => {
         x: 0,
         y: -200,
     }, "-=0.5");
+
+    //Just for Fade-In Animation.
+    masterTimeline.fromTo("#drone-wrapper", 
+        { opacity: 0 }, 
+        { 
+            opacity: 1, 
+            duration: 0.7, 
+            ease: "power1.inOut" 
+        }, 
+        "-=0.5"
+    );
+    //END
 
     masterTimeline.to("#copy-container", { 
         duration: 0.6, 
@@ -51,10 +63,12 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    //End All Animation at 15s
     gsap.delayedCall(15.0, () => {
         masterTimeline.pause();
         if (hoverTween) hoverTween.pause();
-        if (lightTween) gsap.set(".drone-light", { opacity: 0 });
+        if (lightTween) lightTween.pause();
+        gsap.set(".drone-light", { opacity: 0, repeat: 0 });
         console.log("15.0 seconds.");
     });
 });
