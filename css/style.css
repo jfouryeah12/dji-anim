@@ -98,9 +98,17 @@ body {
     margin-bottom: 2px;
 }
 
+#model-title {
+    width: 160px;     /* Adjust this number lower (e.g., 140px) to make it even smaller */
+    height: auto;     /* Maintains the correct proportions so it doesn't distort */
+    display: inline-block; /* Ensures it honors the text alignment of the container */
+    margin-bottom: 8px;    /* Optional: adjusts spacing between the title and "Explore Vivid" */
+}
+
 .sub-title {
     font-size: 11px;
-    color: #8a8a8a;
+    font-weight: bold;
+    color: #ffffff;
     letter-spacing: 1px;
     margin-bottom: 12px;
 }
