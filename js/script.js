@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     masterTimeline.to("#logo-wrapper", { 
         duration: 0.8, 
-        scale: 0.35, 
+        scale: 0.75, 
         x: -75,  
         y: -75, 
         delay: 0.5 
