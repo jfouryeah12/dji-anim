@@ -61,27 +61,29 @@ body {
 
 #drone-wrapper {
     position: absolute;
-    width: 300px;
+    width: 400px;
     bottom: -180px;
-    left: 0;  
+    left: -50px;
+    display: flex;
+    justify-content: center; 
 }
 
 #drone-img {
     width: 100%;
-    display: block;
+    display: block; 
 }
 
 .drone-light {
     position: absolute;
-    width: 4px;
-    height: 4px;
+    width: 5px;
+    height: 8px;
     background-color: #00ff66;
     border-radius: 50%;
     box-shadow: 0 0 8px #00ff66;
     opacity: 0;
 }
-.left-light { top: 45%; left: 12%; }
-.right-light { top: 45%; right: 12%; }
+.left-light { top: 49%; left: 15%; transform: rotate(-20deg); }
+.right-light { top: 49%; right: 15%; transform: rotate(20deg);}
 
 #copy-container {
     position: absolute;

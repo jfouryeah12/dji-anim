@@ -15,8 +15,9 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     masterTimeline.to("#drone-wrapper", { 
-        duration: 1.2, 
-        bottom: "85px" 
+        duration: 1.2,
+        x: 0,
+        y: -200,
     }, "-=0.5");
 
     masterTimeline.to("#copy-container", { 
