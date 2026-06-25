@@ -123,5 +123,6 @@ body {
 
 .cta-button:hover {
     background: transparent;
-    color: #00aeef;
+    color: #ffffff;
+    border: 1px solid #00aeef;
 }
